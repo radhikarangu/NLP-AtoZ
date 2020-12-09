@@ -1,0 +1,14 @@
+Welcome to Natural Language Processing
+It is one of the most exciting research areas as of today
+We will see how Python can be used to work with text files.
+To open the file, you can use Python's built-in open function. If you execute the above piece of code and do not see an error, that means your file was successfully opened. Make sure to change the file path to the location in which you saved your text file.
+
+Let's now see what is stored in the myfile variable:
+Whenever you get Errno 2, there can be two reasons. Either your file doesn't exist or you provided the wrong file path to the open function.
+
+Now, let's read the contents of the file. To do so, you need to call the read() function on the myfile variable, as shown below:
+o write to a text file, you simply have to open a file with mode set to w or w+. The former opens a file in the write mode, while the latter opens the file in both read and write mode. If the file doesn't exist, it will be created. It is important to mention that if you open a file that already contains some text with w or w+ mode, all the existing file contents will be removed, as shown below:
+
+In the output, you will see nothing printed on the screen since the file is opened using the w+ mode, all the contents of the file have been removed. If you want to avoid this then you'll want to append text instead, which I cover below as well.
+
+Now, let's write some content in the file using the write() method.
